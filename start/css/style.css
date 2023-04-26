@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #262c27;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url(../images/header-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/Vector.svg);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 456px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(35%);
+  z-index: 2;
+}
+
+.header::after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/Vector.svg);
+  height: 456px;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(75%) rotate(180deg);
+  z-index: 3;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  padding: 57px 0;
+  gap: 101px;
+  justify-content: flex-end;
+  font-family: "Comfortaa", cursive;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.logo path {
+  transition: fill 0.3s ease;
+}
+
+.logo:hover path {
+  fill: #0093a1;
+}
+
+.header-btn {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #262c27;
+  padding: 12px 71px;
+  border: none;
+  cursor: pointer;
+}
+
+.header-content {
+  min-height: calc(100vh- 161px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* position: relative; */
+}
+
+.header-content-box {
+  max-width: 550px;
+  text-align: center;
+  margin-right: 38px;
+  color: #fff;
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+}
+
+.header-title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 64px;
+  line-height: 71px;
+  margin-top: 160px;
+}
+
+.header-text {
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+
+.header-content-p {
+  position: absolute;
+  bottom: 25px;
+  color: #0093a1;
+}
+
+.header-content-p-first {
+  z-index: 1;
+  right: 145px;
+  bottom: 120px;
+}
+
+.header-content-p-first,
+.header-content-p-second {
+  font-size: 130px;
+  line-height: 145px;
+  font-family: "Comfortaa", cursive;
+  opacity: 0.3;
+}
+
+.header-content-p-second {
+  z-index: 4;
+  left: 265px;
+  bottom: 0;
+}
+
+.header-content-p-third {
+  max-width: 360px;
+  right: 145px;
+  z-index: 4;
+  font-weight: 300;
+  font-size: 32px;
+  font-style: italic;
+  line-height: 39px;
+  text-align: center;
+}
